@@ -1,0 +1,90 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .picture {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3a3a3a;
+    font-size: 32px;
+  }
+  
+  .userGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .userCard {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .userCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pictureContainer {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .userCard:hover .image {
+    transform: scale(1.05);
+  }
+  
+  .name {
+    padding: 15px;
+  }
+  
+  .title {
+    margin: 0 0 10px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .error {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #e74c3c;
+    background-color: #fde8e7;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .userGrid {
+      justify-content: center;
+    }
+  
+    .userCard {
+      width: 280px;
+    }
+  }
